@@ -1,0 +1,21 @@
+<div class="container">
+  <a id="my-open-click">Open</a>
+
+  <div id="foo" style="border: 1px solid red;">
+    <a id="my-hide-click">Hide</a>
+    <p> bar </p>
+  </div>
+</div>
+
+<script>
+  $("#foo").hide();
+
+  $("#my-open-click").click(function(){
+    $("#foo").show();
+  })
+
+  $("#my-hide-click").click(function(){
+    $("#foo").hide();
+  })
+
+</script>
